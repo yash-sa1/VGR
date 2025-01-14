@@ -20,7 +20,7 @@ public class Videogameservice {
     }
 
 
-    public Optional<VideoGame> getVideoGameById(ObjectId id) {
-        return videoGameRepository.findById(id);
+    public Optional<VideoGame> getVideoGameById(String gameID) {
+        return videoGameRepository.findVideoGameByGameID(gameID);
     }
 }
