@@ -23,7 +23,7 @@ public class VgrController {
         return new ResponseEntity<List<VideoGame>>(vgrService.allVideoGames(), HttpStatus.OK);
     }
 
-    @GetMapping("/{GameID}")
+    @GetMapping("/{gameID}")
     public ResponseEntity<Optional<VideoGame>> getVideoGameById(@PathVariable String gameID) {
         return new ResponseEntity<Optional<VideoGame>>(vgrService.getVideoGameById(gameID), HttpStatus.OK);
     }

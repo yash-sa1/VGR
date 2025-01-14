@@ -11,6 +11,6 @@ import java.util.Optional;
 @Repository
 public interface VideoGameRepository extends MongoRepository<VideoGame, ObjectId> {
 
-    Optional<VideoGame> findVideoGameByGameID(String gameID);
+    Optional<VideoGame> findVideoGameBygameID(String gameID);
 
 }

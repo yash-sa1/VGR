@@ -21,6 +21,6 @@ public class Videogameservice {
 
 
     public Optional<VideoGame> getVideoGameById(String gameID) {
-        return videoGameRepository.findVideoGameByGameID(gameID);
+        return videoGameRepository.findVideoGameBygameID(gameID);
     }
 }
